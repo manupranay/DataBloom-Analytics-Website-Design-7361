@@ -48,7 +48,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-gradient">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-gradient pt-16">
         <div className="floating-particles">
           <div className="particle"></div>
           <div className="particle"></div>
@@ -64,11 +64,11 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto"
           >
-            <h1 className="font-space font-bold text-5xl sm:text-6xl lg:text-7xl mb-6 leading-tight">
+            <h1 className="font-space font-bold text-4xl sm:text-5xl lg:text-7xl mb-6 leading-tight">
               Unlock Insights.{' '}
               <span className="text-gradient">Fuel Growth.</span>
             </h1>
-            <p className="text-xl sm:text-2xl text-text-light/80 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl lg:text-2xl text-text-light/80 mb-8 max-w-3xl mx-auto leading-relaxed">
               We help forward-thinking businesses turn messy data into meaningful 
               decisions through human-first analytics and stunning dashboards.
             </p>

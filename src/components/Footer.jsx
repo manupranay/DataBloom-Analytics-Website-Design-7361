@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import SafeIcon from '../common/SafeIcon';
 import * as FiIcons from 'react-icons/fi';
 
-const { FiMail, FiLinkedin, FiTwitter, FiGithub } = FiIcons;
+const { FiMail, FiLinkedin, FiTwitter, FiGithub, FiHeart } = FiIcons;
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -109,7 +109,29 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-muted mt-8 pt-8 text-center">
+        {/* Love This Design Section */}
+        <div className="border-t border-muted mt-8 pt-8">
+          <div className="glassmorphism rounded-xl p-6 mb-6 text-center">
+            <div className="flex items-center justify-center mb-3">
+              <SafeIcon icon={FiHeart} className="w-5 h-5 text-red-400 mr-2" />
+              <span className="font-space font-semibold text-text-light text-lg">
+                Love this design?
+              </span>
+            </div>
+            <p className="text-text-light/70 mb-4 max-w-2xl mx-auto">
+              We can build a custom website just like this — tailored to your brand, voice, and vibe.
+            </p>
+            <a
+              href="mailto:hello@fridaypr.com"
+              className="inline-flex items-center bg-secondary hover:bg-secondary/80 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 glow-hover"
+            >
+              <SafeIcon icon={FiMail} className="w-4 h-4 mr-2" />
+              hello@fridaypr.com
+            </a>
+          </div>
+        </div>
+
+        <div className="text-center">
           <p className="text-text-light/70">
             © {currentYear} DataBloom Analytics. All rights reserved.
           </p>
